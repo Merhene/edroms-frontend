@@ -1,3 +1,19 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+#logo img {
+  width: 25vw; /* Maintenez une largeur fixe ou utilisez une unité responsive comme % si nécessaire */
+  height: auto; /* Garde le ratio de l'image */
+  display: block; /* Assurez que l'image n'accepte pas de comportement inline */
+  margin: 0 auto; /* Centrer l'image dans son conteneur si nécessaire */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+  width: 100%; /* Adjust width as needed */
+  gap: 10px; /* Space between buttons */
+}

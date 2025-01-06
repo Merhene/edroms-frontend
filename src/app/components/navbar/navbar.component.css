@@ -26,6 +26,11 @@
   display: inline-block;
 }
 
+.navbar a:hover {
+  color: #1212ff;
+}
+
+
 .navbar a::after {
   content: "";
   display: block;
@@ -40,5 +45,5 @@
 
 .navbar a:hover::after,
 .navbar a.active::after {
-  background-color: #4c5cc5;
+  background-color: #1212ff;
 }
