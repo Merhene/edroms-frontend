@@ -8,9 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
-  menu() {
-    alert('votre code a bien été testé')
+  constructor() {
+    
   }
-
 }
