@@ -1,11 +1,16 @@
-<app-header></app-header>
-<div id="logo">
-  <img src="./assets/droms.png">
-</div>
-<app-navbar></app-navbar>
-<div class="button-container">
-  <app-button>Ordres</app-button>
-  <app-button>Comptabilité</app-button>
-  <app-button>Magasins</app-button>
-  <app-button>Popotte</app-button>
+<div class="app-container">
+  <app-header></app-header>
+  <div id="images">
+    <img class="collage" src="./assets/collage-tempo.png" alt="">
+    <img class="logo" src="./assets/droms.png">
+  </div>
+  <app-navbar></app-navbar>
+  <div class="button-container">
+    <app-button>Ordres</app-button>
+    <app-button>Comptabilité</app-button>
+    <app-button>Magasins</app-button>
+    <app-button>Popotte</app-button>
+  </div>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
 </div>

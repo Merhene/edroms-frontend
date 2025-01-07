@@ -1,0 +1,22 @@
+body, html {
+  font-family: Roboto, sans-serif;
+  height: 100%;
+  margin: 0;
+  background: radial-gradient(circle, rgba(200, 200, 200, 0.5) 0%, #ffffff 50%, #b9b9b9 100%);
+
+
+
+
+
+  overflow: hidden;
+  position: relative;
+}
+
+/* Nouveau style pour un cercle décoratif à l'arrière-plan */
+body::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(76, 92, 196, 0.6); /* Couleur semi-transparente */
+  border-radius: 50%;
+  z-index: -1;
+}

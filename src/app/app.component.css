@@ -1,12 +1,36 @@
-body {
+html, body {
+  background-color: #ccc;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
 }
 
-#logo img {
-  width: 25vw; /* Maintenez une largeur fixe ou utilisez une unité responsive comme % si nécessaire */
-  height: auto; /* Garde le ratio de l'image */
-  display: block; /* Assurez que l'image n'accepte pas de comportement inline */
-  margin: 0 auto; /* Centrer l'image dans son conteneur si nécessaire */
+#images {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.collage {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  opacity: 0.8;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  width: 15%;
+  height: auto;
+  z-index: 2;
+  transform: translate(-50%, 50%);
+  top: 0;
+  left: 50%;
 }
 
 .button-container {
@@ -14,6 +38,43 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 5vh;
-  width: 100%; /* Adjust width as needed */
-  gap: 10px; /* Space between buttons */
+  width: 100%;
+  gap: 10px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* S'étire pour remplir l'espace disponible */
+  background-color: white;
+  min-height: 100vh; /* Gère la hauteur minimum pour l'écran complet */
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-bottom: 10px; /* Ajoute un peu d'espace au bas si nécessaire */
+}
+
+app-footer {
+  margin-top: auto; /* Pousse le footer en bas du conteneur */
+  width: 100%;
+  background-color: #D9D9D9;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile en haut */
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-container {
+    width: 60%;
+    max-width: 1200px;
+    border: 4px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
 }
