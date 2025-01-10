@@ -1,5 +1,5 @@
 import { Component, Output } from '@angular/core';
-import { EventEmitter } from 'stream';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -11,7 +11,10 @@ import { EventEmitter } from 'stream';
 export class ButtonComponent {
   // @Output() btnClick = new EventEmitter();
 
+  @Output() btnClick = new EventEmitter<void>();
+
   onClick() {
-   console.log('toto');
+    console.log('Button clicked!');
+    this.btnClick.emit();
   }
 }
