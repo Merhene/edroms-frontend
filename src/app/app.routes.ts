@@ -11,4 +11,8 @@ export const routes: Routes = [
     path: 'ordres',
     component: OrderpageComponent
   },
+  {
+    path: 'garde',
+    component: OrderpageComponent
+  },
 ];

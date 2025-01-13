@@ -17,4 +17,8 @@ export class HomepageComponent {
     this.router.navigate(['/ordres']);
   }
 
+  goToGuardpage() {
+    this.router.navigate(['/garde']);
+  }
+
 }
