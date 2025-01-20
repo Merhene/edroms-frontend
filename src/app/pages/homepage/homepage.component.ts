@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { ButtonComponent } from '../../components/button/button.component';
-import { OrderpageComponent } from '../orderpage/orderpage.component';
 import { Router, RouterLink } from '@angular/router';
 
 @Component({
