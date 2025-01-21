@@ -3,21 +3,13 @@ import { ButtonComponent } from '../../components/button/button.component';
 import { Router, RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-homepage',
+  selector: 'app-guardpage',
   standalone: true,
   imports: [ButtonComponent, ButtonComponent, RouterLink],
-  templateUrl: './homepage.component.html',
-  styleUrl: './homepage.component.css'
+  templateUrl: './guardpage.component.html',
+  styleUrl: './guardpage.component.css'
 })
-export class HomepageComponent {
+export class GuardpageComponent {
   router: Router = inject(Router);
-
-  goToOrderpage() {
-    this.router.navigate(['/ordres']);
-  }
-
-  goToGuardpage() {
-    this.router.navigate(['/garde']);
-  }
 
 }
