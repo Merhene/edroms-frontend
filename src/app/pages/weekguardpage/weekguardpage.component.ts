@@ -17,7 +17,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 export class WeekguardpageComponent {
   router: Router = inject(Router);
   calendarOptions: CalendarOptions = {
-    initialView: 'timeGridDay',
+    initialView: 'dayGridMonth',
     plugins: [timeGridPlugin, listPlugin, dayGridPlugin],
     headerToolbar: {
       left: 'prev,next',
